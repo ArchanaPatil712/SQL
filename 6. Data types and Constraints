@@ -8,8 +8,6 @@ CREATE TABLE employee (
     gender VARCHAR(10),                      -- Gender choices manually (ENUM is different in Postgres)
     is_active BOOLEAN DEFAULT TRUE           -- By default, employee is active
 );
-
-
 select *from employee
 
 INSERT INTO employee (name, email, phone, salary, gender, is_active)
