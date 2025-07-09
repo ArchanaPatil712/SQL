@@ -1,1 +1,15 @@
-
+CREATE TABLE emploee2(
+   employee_id INT PRIMARY KEY,
+   first_name VARCHAR(20) NOT NULL,
+   last_name VARCHAR(20) NOT NULL,
+   email VARCHAR(50),
+   department VARCHAR(20),
+   salary NUMBER(10,2),
+   joining_date DATE,
+   age INT);
+SELECT * FROM employee2;
+COPY
+employee2(employee_id,firat_name,last_name,email,department,salary,joining_date,age)
+FROM 'file path(csv file)'
+DELIMITER ','
+CSV HEADER;
