@@ -1,4 +1,3 @@
-
 select *from emloyee;
 
 insert into emloyee( names ,position,department,hire_date,salary)
